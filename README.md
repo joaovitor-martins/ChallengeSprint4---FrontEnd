@@ -7,10 +7,10 @@ Professor: Mario Andre de Deus
 
 
 Equipe:
-** Camilly Alves RM 550210
-** João Vitor Martins RM 98744
-** Murilo Krauss RM 98262
-** Lucas Matheus da Silva RM 550466
+* Camilly Alves RM 550210
+* João Vitor Martins RM 98744
+* Murilo Krauss RM 98262
+* Lucas Matheus da Silva RM 550466
 
 
 ## Introdução
