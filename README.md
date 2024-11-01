@@ -1,21 +1,27 @@
-Attrition Score
-Challenge Sprint 3 – 2024
-Front End & Mobile Development
+## Attrition Score
+
+
+## Challenge Sprint 3 – 2024
+## Front End & Mobile Development
 Professor: Mario Andre de Deus
 
-Equipe:
 
-Camilly Alves RM 550210
-João Vitor Martins RM 98744
-Murilo Krauss RM 98262
-Lucas Matheus da Silva RM 550466
-Introdução
+Equipe:
+** Camilly Alves RM 550210
+** João Vitor Martins RM 98744
+** Murilo Krauss RM 98262
+** Lucas Matheus da Silva RM 550466
+
+
+## Introdução
 Neste projeto, realizamos a modelagem para prever a rotatividade de funcionários (Attrition) usando dois modelos principais: RandomForestClassifier e LogisticRegression. A abordagem incluiu o pré-processamento dos dados, ajuste de hiperparâmetros (tuning) com GridSearchCV, validação cruzada e análise comparativa das métricas de desempenho, como Acurácia e F1-Score.
 
-Descrição dos Dados
+
+## Descrição dos Dados
 Os dados utilizados nesta análise consistem em um conjunto de informações de funcionários, contendo variáveis como idade, salário, departamento, e outras características, além da variável-alvo Attrition, que indica se o funcionário deixou a empresa ou não.
 
-Feature Engineering
+
+## Feature Engineering
 1. Tratamento de Valores Ausentes
 As variáveis numéricas tiveram seus valores ausentes imputados com a mediana.
 As variáveis categóricas tiveram seus valores ausentes preenchidos com o valor mais frequente (moda).
@@ -25,7 +31,8 @@ One-Hot Encoding foi utilizado para as demais variáveis categóricas, permitind
 3. Escalonamento de Variáveis Numéricas
 Para garantir que os modelos sensíveis à escala pudessem lidar bem com os dados, as variáveis numéricas foram padronizadas utilizando o StandardScaler, garantindo que todas as variáveis numéricas tivessem média zero e desvio padrão um.
 
-Treinamento de Modelos
+
+## Treinamento de Modelos
 Foram treinados dois modelos principais: RandomForestClassifier e LogisticRegression. Ambos os modelos foram treinados inicialmente com seus hiperparâmetros padrão para obter uma base de comparação.
 
 1. RandomForestClassifier
@@ -34,7 +41,8 @@ O RandomForestClassifier é um modelo baseado em múltiplas árvores de decisão
 2. LogisticRegression
 A Regressão Logística foi treinada para modelar a probabilidade de um funcionário sair ou não da empresa com base nas variáveis preditivas. Este é um modelo linear que se mostrou eficiente, especialmente em problemas de classificação binária como este.
 
-Validação de Modelos
+
+## Validação de Modelos
 A validação foi realizada usando validação cruzada com 5 folds, permitindo uma avaliação mais robusta dos modelos. A validação cruzada garante que o desempenho dos modelos seja avaliado em diferentes subconjuntos dos dados de treino, ajudando a evitar overfitting.
 
 1. Acurácia
@@ -71,5 +79,6 @@ Melhores hiperparâmetros encontrados: C = 1 penalty = 'l2' solver = 'liblinear'
 
 Apesar do ajuste, o desempenho da LogisticRegression não teve grandes ganhos, sugerindo que o modelo já estava bem ajustado mesmo sem tuning.
 
-Conclusão
+
+## Conclusão
 Após o ajuste de hiperparâmetros e a validação cruzada, a LogisticRegression demonstrou melhor desempenho geral em comparação com o RandomForestClassifier, tanto em termos de acurácia quanto de F1-Score. Isso torna o modelo de Regressão Logística a escolha mais adequada para a predição de rotatividade de funcionários nesta análise.
